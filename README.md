@@ -51,62 +51,9 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
             permissions: "*"
         }]
     },   
-   với mã hoá mật khẩu có thể thiết lập bằng tool: https://tms.tnut.edu.vn/pw.php
-- chạy lại nodered bằng cách: mở cmd, vào thư mục `D:\nodejs\nodered` và chạy lệnh `nssm restart a1-nodered`
-  khi đó nodered sẽ yêu cầu nhập mật khẩu mới vào được giao diện cho admin tại: http://localhost:1880
-2.5. tạo api back-end bằng nodered:
-- tại flow1 trên nodered, sử dụng node `http in` và `http response` để tạo api
-- thêm node `MSSQL` để truy vấn tới cơ sở dữ liệu
-- logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây): 
-  1. http in  : dùng GET cho đơn giản, URL đặt tuỳ ý, ví dụ: /timkiem
-  2. function : để tiền xử lý dữ liệu gửi đến
-  3. MSSQL: để truy vấn dữ liệu tới CSDL, nhận tham số từ node tiền xử lý
-  4. http response: để phản hồi dữ liệu về client: Status Code=200, Header add : Content-Type = application/json
-  có thể thêm node `debug` để quan sát giá trị trung gian.
-- test api thông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=thị
-2.6. Tạo giao diện front-end:
-- html form gồm các file : index.html, fullname.js, fullname.css
-  cả 3 file này đặt trong thư mục: `D:\Apache24\fullname`
-  nhớ thay fullname là tên của bạn, viết liền, ko dấu, chữ thường, vd tên là Đỗ Duy Cốp thì fullname là `doduycop`
-  khi đó 3 file sẽ là: index.html, doduycop.js và doduycop.css
-- index.html và fullname.css: trang trí tuỳ ý, có dấu ấn cá nhân, có form nhập được thông tin.
-- fullname.js: lấy dữ liệu trên form, gửi đến api nodered đã làm ở bước 2.5, nhận về json, dùng json trả về để tạo giao diện phù hợp với kết quả truy vấn của bạn.
-2.7. Nhận xét bài làm của mình:
-- đã hiểu quá trình cài đặt các phần mềm và các thư viện như nào?
-- đã hiểu cách sử dụng nodered để tạo api back-end như nào?
-- đã hiểu cách frond-end tương tác với back-end ra sao?
-==============================
-TIÊU CHÍ CHẤM ĐIỂM:
-1. y/c bắt buộc về thời gian: ko quá Deadline, quá: 0 điểm (ko có ngoại lệ)
-2. cài đặt được apache và nodejs và nodered: 1đ
-3. cài đặt được các thư viện của nodered: 1đ
-4. nhập dữ liệu demo vào sql-server: 1đ
-5. tạo được back-end api trên nodered, test qua url thành công: 1đ
-6. tạo được front-end html css js, gọi được api, hiển thị kq: 1đ
-7. trình bày độ hiểu về toàn bộ quá trình (mục 2.7): 5đ
-==============================
-GHI CHÚ:
-1. yêu cầu trên cài đặt trên ổ D, nếu máy ko có ổ D có thể linh hoạt chuyển sang ổ khác, path khác.
-2. có thể thực hiện trực tiếp trên máy tính windows, hoặc máy ảo
-3. vì csdl là tuỳ ý: sv cần mô tả rõ db chứa dữ liệu gì, nhập nhiều dữ liệu test có nghĩa, json trả về sẽ có dạng như nào cũng cần mô tả rõ.
-4. có thể xây dựng nhiều API cùng cơ chế, khác tính năng: như tìm kiếm, thêm, sửa, xoá dữ liệu trong DB.
-5. bài làm phải có dấu ấn cá nhân, nghiêm cấm mọi hình thức sao chép, gian lận (sẽ cấm thi nếu bị phát hiện gian lận).
-6. bài tập thực làm sẽ tốn nhiều thời gian, sv cần chứng minh quá trình làm: save file `readme.md` mỗi khoảng 15-30 phút làm : lịch sử sửa đổi sẽ thấy quá trình làm này!
-7. nhắc nhẹ: github ko fake datetime được.
-8. sv được sử dụng AI để tham khảo.
-==============================
-DEADLINE: 26/10/2025
-==============================
+   với mã hoá mật khẩu có thể thiết lập bằng tool: hcom
+<img width="773" height="406" alt="image" src="https://github.com/user-attachments/assets/8aaea2c9-ac8e-46d0-832d-291add15d047" />
 
-./.
-
-# CÁC BƯỚC TIẾN HÀNH 
-## Cài và giải nén Apache vào ổ D
-<img width="1046" height="806" alt="image" src="https://github.com/user-attachments/assets/82f71877-3039-4683-973b-bf51da9eced7" />
-## Cấu hình file httpd-vhosts.conf
-<img width="606" height="748" alt="image" src="https://github.com/user-attachments/assets/d8b4cc3e-e668-4696-843d-da49e9b2dd0c" />
-## (http://localhost:8080/)
-<img width="853" height="1053" alt="image" src="https://github.com/user-attachments/assets/c4b94999-4c61-49c9-9d6b-11eae3b6c1b9" />
 ## Fake domain trong file hosts
 <img width="636" height="302" alt="image" src="https://github.com/user-attachments/assets/a02afd0f-a2c7-4298-ad49-3075e55fe332" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2f9c1fa0-48e6-4221-aff1-d5e36ad3bb42" />
