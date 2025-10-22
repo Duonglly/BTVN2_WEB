@@ -53,10 +53,14 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
     },   
    với mã hoá mật khẩu có thể thiết lập bằng tool: hcom
 <img width="773" height="406" alt="image" src="https://github.com/user-attachments/assets/8aaea2c9-ac8e-46d0-832d-291add15d047" />
+# CÁC BƯỚC LÀM
+## Vô hiệu hóa iis
+## Cài và khởi động Apache
+<img width="965" height="500" alt="image" src="https://github.com/user-attachments/assets/982d12d3-c682-4a97-8620-9fe91ab81302" />
+## Cài Node.js + Cài Node-RED + Cài NSSM (để chạy Node-RED như service)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/77d7ed8f-7837-4469-a089-64ce463a7cef" />
+## Tạo cơ sở dữ liệu trên MSSQL
 
-## Fake domain trong file hosts
-<img width="636" height="302" alt="image" src="https://github.com/user-attachments/assets/a02afd0f-a2c7-4298-ad49-3075e55fe332" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2f9c1fa0-48e6-4221-aff1-d5e36ad3bb42" />
 
 
 
