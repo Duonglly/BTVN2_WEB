@@ -57,7 +57,18 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 
 ## Vô hiệu hóa iis
 
+-để tránh xung đột cổng (IIS mặc định chiếm port 80).
+- Thực hiện bằng lệnh:iisreset /stop
+
+
 ## Cài và khởi động Apache
+
+-Cấu hình file httpd.conf và httpd-vhosts.conf để tạo website cá nhân với domain riêng.
+-lệnh để cài đặt và khởi động Apache:
+
+D:\Apache24\bin\httpd.exe -k install
+D:\Apache24\bin\httpd.exe -k start
+
 
 <img width="965" height="500" alt="image" src="https://github.com/user-attachments/assets/982d12d3-c682-4a97-8620-9fe91ab81302" />
 
@@ -85,13 +96,31 @@ node-red-contrib-cron-plus
 
 mã hóa mật khẩu:$2y$10$6tGhMi2d5f/2Ui8k6Q3zWO2DkYLWKKgyW8V814B1gg.VprXehMuVq(123456)
 
-## Tạo API backend trong Node-RED
+## Tạo API backend trong Node-RED + Tạo API POST (nhận dữ liệu từ client)
+
+HTTP In – nhận yêu cầu từ client (GET, POST, v.v.)
+
+Function – xử lý dữ liệu, logic nghiệp vụ
+
+Database (MSSQL/MySQL) – kết nối CSDL để lấy hoặc ghi dữ liệu
+
+HTTP Response – gửi kết quả trả lại client
 
 <img width="1521" height="605" alt="image" src="https://github.com/user-attachments/assets/2fc60ba9-319e-4164-83e4-e7994125bc00" />
 
-## Tạo API POST (nhận dữ liệu từ client)
 
 <img width="728" height="651" alt="image" src="https://github.com/user-attachments/assets/89b6d63e-69ea-4616-90fa-43d9071e8f1a" />
+
+-Cách hoạt động:
+
+Khi client truy cập vào đường dẫn, ví dụ http://localhost:1880/getdata,
+Node-RED nhận yêu cầu qua HTTP In.
+
+Node Function xử lý, có thể thêm logic (tạo truy vấn SQL, lọc dữ liệu, xử lý JSON, …).
+
+Node MSSQL Plus hoặc MySQL kết nối tới database SQL Server đã tạo ở bước trước để lấy dữ liệu thật.
+
+Cuối cùng, HTTP Response gửi lại dữ liệu dạng JSON cho frontend hiển thị.
 
 ## Tạo giao diện Frontend
 
