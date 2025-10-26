@@ -52,16 +52,25 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
         }]
     },   
    với mã hoá mật khẩu có thể thiết lập bằng tool: hcom
-<img width="773" height="406" alt="image" src="https://github.com/user-attachments/assets/8aaea2c9-ac8e-46d0-832d-291add15d047" />
+
 # CÁC BƯỚC LÀM
+
 ## Vô hiệu hóa iis
+
 ## Cài và khởi động Apache
+
 <img width="965" height="500" alt="image" src="https://github.com/user-attachments/assets/982d12d3-c682-4a97-8620-9fe91ab81302" />
+
 ## Cài Node.js + Cài Node-RED + Cài NSSM (để chạy Node-RED như service)
+
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/77d7ed8f-7837-4469-a089-64ce463a7cef" />
+
 ## Tạo cơ sở dữ liệu trên MSSQL
+
 <img width="329" height="301" alt="image" src="https://github.com/user-attachments/assets/e80c8812-5330-47bd-a4ed-b17325150898" />
+
 ## Cài thư viện trên Node-RED
+
 node-red-contrib-mssql-plus
 node-red-node-mysql
 node-red-contrib-telegrambot
@@ -69,14 +78,23 @@ node-red-contrib-moment
 node-red-contrib-influxdb
 node-red-contrib-duckdns
 node-red-contrib-cron-plus
+
 <img width="620" height="878" alt="image" src="https://github.com/user-attachments/assets/fe957059-06f0-4319-a720-a2ab51c80fbd" />
+
 ## Sửa file settings.js để thêm đăng nhập
+
 mã hóa mật khẩu:$2y$10$6tGhMi2d5f/2Ui8k6Q3zWO2DkYLWKKgyW8V814B1gg.VprXehMuVq(123456)
+
 ## Tạo API backend trong Node-RED
-<img width="830" height="183" alt="image" src="https://github.com/user-attachments/assets/ca8941a2-e28f-48a5-ac92-79d1a2367d67" />
+
+<img width="1521" height="605" alt="image" src="https://github.com/user-attachments/assets/2fc60ba9-319e-4164-83e4-e7994125bc00" />
+
 ## Tạo API POST (nhận dữ liệu từ client)
+
 <img width="728" height="651" alt="image" src="https://github.com/user-attachments/assets/89b6d63e-69ea-4616-90fa-43d9071e8f1a" />
+
 ## Tạo giao diện Frontend
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/70487642-39d3-43f1-ab7e-1aff20fd17e7" />
 
 
