@@ -77,6 +77,7 @@ mã hóa mật khẩu:$2y$10$6tGhMi2d5f/2Ui8k6Q3zWO2DkYLWKKgyW8V814B1gg.VprXehMu
 ## Tạo API POST (nhận dữ liệu từ client)
 <img width="728" height="651" alt="image" src="https://github.com/user-attachments/assets/89b6d63e-69ea-4616-90fa-43d9071e8f1a" />
 ## Tạo giao diện Frontend
-<img width="1919" height="1046" alt="image" src="https://github.com/user-attachments/assets/a0e2ab95-0e88-403f-9a10-cf81be019d0c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/70487642-39d3-43f1-ab7e-1aff20fd17e7" />
+
 
 
