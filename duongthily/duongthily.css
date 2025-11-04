@@ -1,0 +1,97 @@
+/* 🌸 Tổng thể trang */
+body {
+  background: linear-gradient(135deg, #f9a8d4, #c084fc, #60a5fa);
+  background-size: 300% 300%;
+  animation: gradientFlow 8s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Hiệu ứng chuyển màu nền */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌺 Tiêu đề */
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* 🌼 Form tìm kiếm */
+#searchForm {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 15px 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#keyword {
+  border: none;
+  padding: 12px 15px;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+}
+
+button {
+  margin-left: 10px;
+  background: linear-gradient(45deg, #ec4899, #8b5cf6);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #8b5cf6, #ec4899);
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* 🌟 Kết quả */
+#result {
+  margin-top: 40px;
+}
+
+.sv-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 20px auto;
+  width: 350px;
+  color: #fff;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sv-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+}
+
+.sv-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.sv-card b {
+  color: #fef9c3;
+}
